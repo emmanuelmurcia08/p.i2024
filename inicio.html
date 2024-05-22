@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('proyecto_integrador/ingreso.jpg'); /* Cambia 'ruta/a/tu/imagen.jpg' por la URL de tu imagen */
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* Fija la imagen de fondo */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para que el texto sea legible */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-3d {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 5px #0056b3, 0 10px #00408a; /* Sombra para dar efecto 3D */
+            position: relative;
+            transition: all 0.2s ease;
+        }
+
+        .btn-3d:hover {
+            box-shadow: 0 3px #0056b3, 0 8px #00408a;
+            top: -2px;
+        }
+
+        .btn-3d:active {
+            box-shadow: 0 0 #0056b3, 0 5px #00408a;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="inicio.php" method="post">
+            <label for="username">Correo:</label><br>
+            <input type="text" id="username" name="correo" required><br>
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="contrasena" required><br><br>
+            <a href="roles.html">
+                <input type="submit" class="btn-3d" value="Iniciar sesión">
+            </a>
+        </form>
+  
+        <div class="register-link">
+            ¿No tienes una cuenta? <a href="registre.html">Regístrate</a>
+        </div>
+    </div>
+</body>
+</html>
+

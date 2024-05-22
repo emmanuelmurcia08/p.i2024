@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto CRUD</title>
+    <!-- Agregar Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+        }
+        .btn-custom {
+            margin-top: 10px;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            margin: 0 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Aeropuerto</h1>
+
+        <div class="mt-5">
+            <h2>Administrador</h2>
+            <form action="admin.php" method="POST">
+                <button type="submit" class="btn btn-primary btn-custom">Vuelos</button>
+            </form>
+        </div>
+
+        <div class="mt-5">
+            <h2>Pasajero</h2>
+            <form action="pasajero.php" method="POST">
+                <button type="submit" class="btn btn-primary btn-custom">Consultar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Agregar Bootstrap JS (opcional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="actions" align="center">
+        <a href="inicio.html" class="btn">Cerrar Sesion</a>
+    </div>
+</body>
+</html>
